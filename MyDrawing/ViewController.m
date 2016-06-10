@@ -53,19 +53,14 @@
     //毛筆筆觸
     if (mode == 2) {
         double pointLength = pow(pow((lastPoint.x - currentPoint.x), 2) + pow((lastPoint.y - currentPoint.y), 2), 0.5);
-        NSLog(@"pointLengtn: %f",pointLength);
         if (pointLength>10){
-            NSLog(@"%s","small");
             brush = brush*0.9;
-            NSLog(@"%f",brush);
             if (brush < 5) {
                 brush = 5;
             }
             
         }else if (pointLength<5) {
-            NSLog(@"%s","big");
             brush = brush*1.03;
-            NSLog(@"%f",brush);
             if (brush > 50) {
                 brush = 50;
             }
@@ -127,6 +122,8 @@
         case 1:
             //選擇鉛筆做的事情
             mode = 1;
+            brush = 10.0f;
+            brushTemp = brush;
             break;
         case 2:
             //選擇毛筆做的事情
@@ -222,7 +219,7 @@
 - (IBAction)colorChoosePressed:(id)sender {
     
     [UIView animateWithDuration:0.25 animations:^{
-        self.colorViewSpace.constant = 90.0f;
+        self.colorViewSpace.constant = 90.0f*(self.view.frame.size.width/375);
         self.sizeViewSpace.constant = 0.0f;
         self.pencilViewSpace.constant = 0.0f;
         [self.colorView layoutIfNeeded];
@@ -235,7 +232,7 @@
 - (IBAction)sizeChoosePressed:(id)sender {
     [UIView animateWithDuration:0.25 animations:^{
         self.colorViewSpace.constant = 0.0f;
-        self.sizeViewSpace.constant = 90.0f;
+        self.sizeViewSpace.constant = 90.0f*(self.view.frame.size.width/375);
         self.pencilViewSpace.constant = 0.0f;
         [self.colorView layoutIfNeeded];
         [self.sizeView layoutIfNeeded];
@@ -248,7 +245,7 @@
     [UIView animateWithDuration:0.25 animations:^{
         self.colorViewSpace.constant = 0.0f;
         self.sizeViewSpace.constant = 0.0f;
-        self.pencilViewSpace.constant = 90.0f;
+        self.pencilViewSpace.constant = 90.0f*(self.view.frame.size.width/375);
         [self.colorView layoutIfNeeded];
         [self.sizeView layoutIfNeeded];
         [self.pencilView layoutIfNeeded];

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22CC3ED1D0B3F1400E60DC9 /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = A22CC3E81D0B3F1400E60DC9 /* color.png */; };
+		A22CC3EE1D0B3F1400E60DC9 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = A22CC3E91D0B3F1400E60DC9 /* eraser.png */; };
+		A22CC3EF1D0B3F1400E60DC9 /* mode.png in Resources */ = {isa = PBXBuildFile; fileRef = A22CC3EA1D0B3F1400E60DC9 /* mode.png */; };
+		A22CC3F01D0B3F1400E60DC9 /* mode1.png in Resources */ = {isa = PBXBuildFile; fileRef = A22CC3EB1D0B3F1400E60DC9 /* mode1.png */; };
+		A22CC3F11D0B3F1400E60DC9 /* mode2.png in Resources */ = {isa = PBXBuildFile; fileRef = A22CC3EC1D0B3F1400E60DC9 /* mode2.png */; };
+		A22CC3F31D0B421A00E60DC9 /* size.png in Resources */ = {isa = PBXBuildFile; fileRef = A22CC3F21D0B421A00E60DC9 /* size.png */; };
 		A270953B1D0AC6FA00FA501A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A270953A1D0AC6FA00FA501A /* main.m */; };
 		A270953E1D0AC6FA00FA501A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A270953D1D0AC6FA00FA501A /* AppDelegate.m */; };
 		A27095411D0AC6FA00FA501A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27095401D0AC6FA00FA501A /* ViewController.m */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A22CC3E81D0B3F1400E60DC9 /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		A22CC3E91D0B3F1400E60DC9 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser.png; sourceTree = "<group>"; };
+		A22CC3EA1D0B3F1400E60DC9 /* mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mode.png; sourceTree = "<group>"; };
+		A22CC3EB1D0B3F1400E60DC9 /* mode1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mode1.png; sourceTree = "<group>"; };
+		A22CC3EC1D0B3F1400E60DC9 /* mode2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mode2.png; sourceTree = "<group>"; };
+		A22CC3F21D0B421A00E60DC9 /* size.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = size.png; sourceTree = "<group>"; };
 		A27095361D0AC6FA00FA501A /* MyDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A270953A1D0AC6FA00FA501A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A270953C1D0AC6FA00FA501A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +162,12 @@
 			children = (
 				A27095711D0ACA8800FA501A /* title.png */,
 				A270956D1D0AC71100FA501A /* logo.png */,
+				A22CC3E81D0B3F1400E60DC9 /* color.png */,
+				A22CC3E91D0B3F1400E60DC9 /* eraser.png */,
+				A22CC3EA1D0B3F1400E60DC9 /* mode.png */,
+				A22CC3EB1D0B3F1400E60DC9 /* mode1.png */,
+				A22CC3EC1D0B3F1400E60DC9 /* mode2.png */,
+				A22CC3F21D0B421A00E60DC9 /* size.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -221,7 +239,7 @@
 				TargetAttributes = {
 					A27095351D0AC6FA00FA501A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = FPNE9UBDQM;
+						DevelopmentTeam = 2R722MC783;
 					};
 					A270954E1D0AC6FA00FA501A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -260,9 +278,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22CC3EF1D0B3F1400E60DC9 /* mode.png in Resources */,
 				A270956F1D0AC71100FA501A /* logo.png in Resources */,
+				A22CC3F31D0B421A00E60DC9 /* size.png in Resources */,
+				A22CC3F01D0B3F1400E60DC9 /* mode1.png in Resources */,
+				A22CC3F11D0B3F1400E60DC9 /* mode2.png in Resources */,
+				A22CC3EE1D0B3F1400E60DC9 /* eraser.png in Resources */,
 				A27095721D0ACA8800FA501A /* title.png in Resources */,
 				A27095491D0AC6FA00FA501A /* LaunchScreen.storyboard in Resources */,
+				A22CC3ED1D0B3F1400E60DC9 /* color.png in Resources */,
 				A27095461D0AC6FA00FA501A /* Assets.xcassets in Resources */,
 				A27095441D0AC6FA00FA501A /* Main.storyboard in Resources */,
 			);
@@ -436,7 +460,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyDrawing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MyDraw;
+				PRODUCT_BUNDLE_IDENTIFIER = MyDrawing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -450,7 +474,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyDrawing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MyDraw;
+				PRODUCT_BUNDLE_IDENTIFIER = MyDrawing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

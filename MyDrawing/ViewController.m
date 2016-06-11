@@ -24,9 +24,14 @@
     mode = 1;   //mode 0 鉛筆  1 毛筆
     
     isChoose = false;
-    self.colorView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5];
-    self.sizeView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5];
-    self.pencilView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5];
+    self.toolView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5f];
+    
+    lastRed = red;
+    lastGreen = green;
+    lastBlue = blue;
+    lastOpacity = opacity;
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -130,7 +135,19 @@
             mode = 2;
             break;
     }
-
+    red = lastRed;
+    green = lastGreen;
+    blue = lastBlue;
+    opacity = lastOpacity;
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        self.colorViewSpace.constant = 0.0f;
+        self.sizeViewSpace.constant = 0.0f;
+        self.pencilViewSpace.constant = 0.0f;
+        [self.colorView layoutIfNeeded];
+        [self.sizeView layoutIfNeeded];
+        [self.pencilView layoutIfNeeded];
+    }];
 }
 
 - (IBAction)sizePressed:(id)sender {
@@ -151,6 +168,14 @@
             brushTemp = brush;
             break;
     }
+    [UIView animateWithDuration:0.25 animations:^{
+        self.colorViewSpace.constant = 0.0f;
+        self.sizeViewSpace.constant = 0.0f;
+        self.pencilViewSpace.constant = 0.0f;
+        [self.colorView layoutIfNeeded];
+        [self.sizeView layoutIfNeeded];
+        [self.pencilView layoutIfNeeded];
+    }];
 }
 
 - (IBAction)pencilPressed:(id)sender {
@@ -201,15 +226,29 @@
             
     }
     
-
+    lastRed = red;
+    lastGreen = green;
+    lastBlue = blue;
+    lastOpacity = opacity;
     
-    self.colorView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5];
-    self.sizeView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5];
-    self.pencilView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5];
+    self.toolView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5f];
+    [UIView animateWithDuration:0.25 animations:^{
+        self.colorViewSpace.constant = 0.0f;
+        self.sizeViewSpace.constant = 0.0f;
+        self.pencilViewSpace.constant = 0.0f;
+        [self.colorView layoutIfNeeded];
+        [self.sizeView layoutIfNeeded];
+        [self.pencilView layoutIfNeeded];
+    }];
 
 }
 
 - (IBAction)eraserPressed:(id)sender {
+    lastRed = red;
+    lastGreen = green;
+    lastBlue = blue;
+    lastOpacity = opacity;
+    
     red = 255.0/255.0;
     green = 255.0/255.0;
     blue = 255.0/255.0;

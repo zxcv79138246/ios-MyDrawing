@@ -18,6 +18,10 @@
     CGFloat opacity;
     NSInteger mode;
     
+    CGFloat lastRed;
+    CGFloat lastGreen;
+    CGFloat lastBlue;
+    CGFloat lastOpacity;
     
     BOOL mouseSwiped;
     BOOL isChoose;
@@ -28,6 +32,8 @@
 @property (weak, nonatomic) IBOutlet UIView *sizeView;
 @property (weak, nonatomic) IBOutlet UIView *colorView;
 @property (weak, nonatomic) IBOutlet UIView *pencilView;
+@property (weak, nonatomic) IBOutlet UIView *toolView;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *colorViewSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *sizeViewSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *pencilViewSpace;

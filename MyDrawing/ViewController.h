@@ -33,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UIView *colorView;
 @property (weak, nonatomic) IBOutlet UIView *pencilView;
 @property (weak, nonatomic) IBOutlet UIView *toolView;
+@property (weak, nonatomic) IBOutlet UIView *opacityView;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *colorViewSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *sizeViewSpace;
@@ -44,9 +45,12 @@
 
 - (IBAction)pencilPressed:(id)sender;
 
+- (IBAction)opacityPressed:(id)sender;
+
 - (IBAction)eraserPressed:(id)sender;
 
 - (IBAction)colorChoosePressed:(id)sender;
+
 
 - (IBAction)sizeChoosePressed:(id)sender;
 

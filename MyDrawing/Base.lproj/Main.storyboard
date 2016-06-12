@@ -142,93 +142,134 @@
                                 <rect key="frame" x="0.0" y="577" width="375" height="90"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-QH-DLp" userLabel="ButtonRed">
-                                        <rect key="frame" x="0.0" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="6D4-kx-DVE"/>
-                                            <constraint firstAttribute="width" secondItem="Ayg-QH-DLp" secondAttribute="height" multiplier="1:1" id="bfd-4b-vDB"/>
+                                            <constraint firstAttribute="height" constant="45" id="6D4-kx-DVE"/>
+                                            <constraint firstAttribute="width" secondItem="Ayg-QH-DLp" secondAttribute="height" multiplier="1:1" constant="2" id="bfd-4b-vDB"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="Hfg-HM-KUa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK3-JY-Kam" userLabel="ButtonOrange">
-                                        <rect key="frame" x="47" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="47" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="jK3-JY-Kam" secondAttribute="height" multiplier="1:1" id="Ke5-fq-tIp"/>
-                                            <constraint firstAttribute="height" constant="47" id="SnZ-SC-Owf"/>
+                                            <constraint firstAttribute="width" secondItem="jK3-JY-Kam" secondAttribute="height" multiplier="1:1" constant="2" id="Ke5-fq-tIp"/>
+                                            <constraint firstAttribute="height" constant="45" id="SnZ-SC-Owf"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="kO2-5W-weK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FW-q1-X6O" userLabel="ButtonYellow">
-                                        <rect key="frame" x="94" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="94" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="P1t-qC-i2R"/>
-                                            <constraint firstAttribute="width" secondItem="2FW-q1-X6O" secondAttribute="height" multiplier="1:1" id="bEB-jV-rdI"/>
+                                            <constraint firstAttribute="height" constant="45" id="P1t-qC-i2R"/>
+                                            <constraint firstAttribute="width" secondItem="2FW-q1-X6O" secondAttribute="height" multiplier="1:1" constant="2" id="bEB-jV-rdI"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="Xxc-4M-567"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZM-3S-XTK" userLabel="ButtonGreen">
-                                        <rect key="frame" x="141" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="141" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="0G7-EF-u6m"/>
-                                            <constraint firstAttribute="width" secondItem="uZM-3S-XTK" secondAttribute="height" multiplier="1:1" id="Y0b-44-zHy"/>
+                                            <constraint firstAttribute="height" constant="45" id="0G7-EF-u6m"/>
+                                            <constraint firstAttribute="width" secondItem="uZM-3S-XTK" secondAttribute="height" multiplier="1:1" constant="2" id="Y0b-44-zHy"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="4XV-6y-oCr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-hV-vet" userLabel="ButtonCyan">
-                                        <rect key="frame" x="188" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="188" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="Hg5-4p-zyI"/>
-                                            <constraint firstAttribute="width" secondItem="xEF-hV-vet" secondAttribute="height" multiplier="1:1" id="ckY-Xj-hBZ"/>
+                                            <constraint firstAttribute="height" constant="45" id="Hg5-4p-zyI"/>
+                                            <constraint firstAttribute="width" secondItem="xEF-hV-vet" secondAttribute="height" multiplier="1:1" constant="2" id="ckY-Xj-hBZ"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="Qr7-yg-8WA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMn-DX-Ke1" userLabel="ButtonBlue">
-                                        <rect key="frame" x="235" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="235" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="P3a-cY-3UD"/>
-                                            <constraint firstAttribute="width" secondItem="tMn-DX-Ke1" secondAttribute="height" multiplier="1:1" id="XIb-Yh-pHc"/>
+                                            <constraint firstAttribute="height" constant="45" id="P3a-cY-3UD"/>
+                                            <constraint firstAttribute="width" secondItem="tMn-DX-Ke1" secondAttribute="height" multiplier="1:1" constant="2" id="XIb-Yh-pHc"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="szN-sC-Dud"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EL-Be-D0b" userLabel="ButtonPurple">
-                                        <rect key="frame" x="282" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="282" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="S3W-5X-7QU"/>
-                                            <constraint firstAttribute="width" secondItem="1EL-Be-D0b" secondAttribute="height" multiplier="1:1" id="Ub9-hM-c5c"/>
+                                            <constraint firstAttribute="height" constant="45" id="S3W-5X-7QU"/>
+                                            <constraint firstAttribute="width" secondItem="1EL-Be-D0b" secondAttribute="height" multiplier="1:1" constant="2" id="Ub9-hM-c5c"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="4bw-4n-8GG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5j-OX-LUO" userLabel="ButtonBlack">
-                                        <rect key="frame" x="329" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="329" y="0.0" width="47" height="45"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="KKg-pZ-82X"/>
-                                            <constraint firstAttribute="width" secondItem="G5j-OX-LUO" secondAttribute="height" multiplier="1:1" id="fZZ-wO-aO1"/>
+                                            <constraint firstAttribute="height" constant="45" id="KKg-pZ-82X"/>
+                                            <constraint firstAttribute="width" secondItem="G5j-OX-LUO" secondAttribute="height" multiplier="1:1" constant="2" id="fZZ-wO-aO1"/>
                                         </constraints>
                                         <connections>
                                             <action selector="pencilPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="QZF-jX-enX"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frn-d2-g4F" userLabel="OpacityView">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.80000000000000004" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-Bt-UQK" userLabel="ButtonOpacity1">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="opacityPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="9wE-xt-rJ5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.59999999999999998" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvS-IM-Ld4" userLabel="ButtonOpacity2">
+                                                <rect key="frame" x="75" y="0.0" width="75" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="opacityPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="0Ta-cp-4tK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.40000000000000002" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-2J-18Z" userLabel="ButtonOpacity3">
+                                                <rect key="frame" x="150" y="0.0" width="75" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="opacityPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="ejT-kQ-Saz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.20000000000000001" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL3-WQ-FIK" userLabel="ButtonOpacity4">
+                                                <rect key="frame" x="225" y="0.0" width="75" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="opacityPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="RYd-Zg-drw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.050000000000000003" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVT-2z-ETP" userLabel="ButtonOpacity5">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="45"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="opacityPressed:" destination="RGG-nd-dcO" eventType="touchUpInside" id="fQZ-3x-Lkx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -381,6 +422,7 @@
                         <outlet property="colorView" destination="kh4-63-jdY" id="IqU-xS-Jj8"/>
                         <outlet property="colorViewSpace" destination="LLB-4I-Cbk" id="erc-6h-coj"/>
                         <outlet property="mainImage" destination="jau-dT-o2L" id="XDp-sf-AnY"/>
+                        <outlet property="opacityView" destination="frn-d2-g4F" id="Yre-mR-l3W"/>
                         <outlet property="pencilView" destination="a1a-V9-8Tj" id="ncG-if-ykh"/>
                         <outlet property="pencilViewSpace" destination="5pO-qQ-wjU" id="V3t-da-jmz"/>
                         <outlet property="sizeView" destination="ysX-fG-gZ7" id="ESI-EF-jEb"/>

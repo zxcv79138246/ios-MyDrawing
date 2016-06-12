@@ -22,6 +22,7 @@
     brush = 10.0;
     opacity = 1.0;
     mode = 1;   //mode 0 鉛筆  1 毛筆
+    brushTemp = brush;
     
     isChoose = false;
     self.toolView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5f];
@@ -168,14 +169,14 @@
             brushTemp = brush;
             break;
     }
-    [UIView animateWithDuration:0.25 animations:^{
-        self.colorViewSpace.constant = 0.0f;
-        self.sizeViewSpace.constant = 0.0f;
-        self.pencilViewSpace.constant = 0.0f;
-        [self.colorView layoutIfNeeded];
-        [self.sizeView layoutIfNeeded];
-        [self.pencilView layoutIfNeeded];
-    }];
+//    [UIView animateWithDuration:0.25 animations:^{
+//        self.colorViewSpace.constant = 0.0f;
+//        self.sizeViewSpace.constant = 0.0f;
+//        self.pencilViewSpace.constant = 0.0f;
+//        [self.colorView layoutIfNeeded];
+//        [self.sizeView layoutIfNeeded];
+//        [self.pencilView layoutIfNeeded];
+//    }];
 }
 
 - (IBAction)pencilPressed:(id)sender {
@@ -230,17 +231,56 @@
     lastGreen = green;
     lastBlue = blue;
     lastOpacity = opacity;
-    
-    self.toolView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.5f];
-    [UIView animateWithDuration:0.25 animations:^{
-        self.colorViewSpace.constant = 0.0f;
-        self.sizeViewSpace.constant = 0.0f;
-        self.pencilViewSpace.constant = 0.0f;
-        [self.colorView layoutIfNeeded];
-        [self.sizeView layoutIfNeeded];
-        [self.pencilView layoutIfNeeded];
-    }];
+    self.opacityView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:1.0f];
+    self.toolView.backgroundColor = [UIColor colorWithRed: red green:green blue:blue alpha:0.3f];
+//    [UIView animateWithDuration:0.25 animations:^{
+//        self.colorViewSpace.constant = 0.0f;
+//        self.sizeViewSpace.constant = 0.0f;
+//        self.pencilViewSpace.constant = 0.0f;
+//        [self.colorView layoutIfNeeded];
+//        [self.sizeView layoutIfNeeded];
+//        [self.pencilView layoutIfNeeded];
+//    }];
 
+}
+
+
+- (IBAction)opacityPressed:(id)sender {
+    UIButton * opacityPressedButton = (UIButton*)sender;
+    
+    switch(opacityPressedButton.tag)
+    {
+        case 1:
+            opacity = 0.2f;
+            break;
+        case 2:
+            opacity = 0.4f;
+            break;
+        case 3:
+            opacity = 0.6f;
+            break;
+        case 4:
+            opacity = 0.8f;
+            break;
+        case 5:
+            opacity = 1.0f;
+            break;
+    }
+    
+    lastRed = red;
+    lastGreen = green;
+    lastBlue = blue;
+    lastOpacity = opacity;
+    
+
+//    [UIView animateWithDuration:0.25 animations:^{
+//        self.colorViewSpace.constant = 0.0f;
+//        self.sizeViewSpace.constant = 0.0f;
+//        self.pencilViewSpace.constant = 0.0f;
+//        [self.colorView layoutIfNeeded];
+//        [self.sizeView layoutIfNeeded];
+//        [self.pencilView layoutIfNeeded];
+//    }];
 }
 
 - (IBAction)eraserPressed:(id)sender {
@@ -267,6 +307,7 @@
     }];
 
 }
+
 
 - (IBAction)sizeChoosePressed:(id)sender {
     [UIView animateWithDuration:0.25 animations:^{

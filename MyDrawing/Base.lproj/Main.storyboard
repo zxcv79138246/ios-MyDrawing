@@ -84,8 +84,23 @@
                                             <constraint firstAttribute="height" constant="667" id="jfX-rW-05F"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvG-Oi-TCY" userLabel="ButtonReset">
-                                        <rect key="frame" x="8" y="8" width="71" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UA-JO-58w" userLabel="ButtonSave">
+                                        <rect key="frame" x="304" y="3" width="71" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0UA-JO-58w" secondAttribute="height" multiplier="71:41" id="ggB-ro-8U9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="reset:" destination="RGG-nd-dcO" eventType="touchUpInside" id="ZX3-Hm-r3c"/>
+                                            <action selector="save:" destination="RGG-nd-dcO" eventType="touchUpInside" id="yuD-G3-5Lb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvG-Oi-TCY" userLabel="ButtonReset">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bvG-Oi-TCY" secondAttribute="height" multiplier="79:44" id="5AV-9i-BB6"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
@@ -98,8 +113,12 @@
                                     <constraint firstItem="jau-dT-o2L" firstAttribute="leading" secondItem="9fh-9Y-iwx" secondAttribute="leading" id="5br-b3-4PV"/>
                                     <constraint firstItem="3eP-45-bIB" firstAttribute="leading" secondItem="9fh-9Y-iwx" secondAttribute="leading" id="E4u-4w-KPr"/>
                                     <constraint firstItem="3eP-45-bIB" firstAttribute="top" secondItem="9fh-9Y-iwx" secondAttribute="top" id="Hci-xG-VYx"/>
+                                    <constraint firstItem="bvG-Oi-TCY" firstAttribute="leading" secondItem="9fh-9Y-iwx" secondAttribute="leading" id="LE3-Wa-lIH"/>
                                     <constraint firstAttribute="width" secondItem="9fh-9Y-iwx" secondAttribute="height" multiplier="375:578" id="aar-NC-eZy"/>
+                                    <constraint firstAttribute="trailing" secondItem="0UA-JO-58w" secondAttribute="trailing" id="bzj-le-MHG"/>
                                     <constraint firstAttribute="height" constant="578" id="cbs-s2-TTe"/>
+                                    <constraint firstItem="0UA-JO-58w" firstAttribute="top" secondItem="9fh-9Y-iwx" secondAttribute="top" constant="3" id="iZc-jz-aNa"/>
+                                    <constraint firstItem="bvG-Oi-TCY" firstAttribute="top" secondItem="9fh-9Y-iwx" secondAttribute="top" id="pVF-qH-TXu"/>
                                     <constraint firstItem="jau-dT-o2L" firstAttribute="top" secondItem="9fh-9Y-iwx" secondAttribute="top" id="uXO-SP-eQd"/>
                                 </constraints>
                             </view>

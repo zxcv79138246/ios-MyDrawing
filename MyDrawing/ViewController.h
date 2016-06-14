@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController<UIPageViewControllerDelegate,UIActionSheetDelegate>{
     CGPoint lastPoint;
     CGFloat red;
     CGFloat green;
@@ -22,6 +22,8 @@
     CGFloat lastGreen;
     CGFloat lastBlue;
     CGFloat lastOpacity;
+    
+    UIImage *saveImage;
     
     BOOL mouseSwiped;
     BOOL isChoose;
@@ -58,7 +60,7 @@
 
 - (IBAction)reset:(id)sender;
 
-
+- (IBAction)save:(id)sender;
 
 
 @end

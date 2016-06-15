@@ -27,6 +27,7 @@
     
     BOOL mouseSwiped;
     BOOL isChoose;
+    int sizeChoose;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 @property (weak, nonatomic) IBOutlet UIImageView *tempDrawImage;
@@ -40,6 +41,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *colorViewSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *sizeViewSpace;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *pencilViewSpace;
+@property (weak, nonatomic) IBOutlet UIButton *sizeButtonS;
+@property (weak, nonatomic) IBOutlet UIButton *sizeButtonM;
+@property (weak, nonatomic) IBOutlet UIButton *sizeButtonL;
 
 - (IBAction)modePressed:(id)sender;
 

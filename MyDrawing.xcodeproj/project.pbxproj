@@ -23,6 +23,8 @@
 		A270955F1D0AC6FA00FA501A /* MyDrawingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A270955E1D0AC6FA00FA501A /* MyDrawingUITests.m */; };
 		A270956F1D0AC71100FA501A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A270956D1D0AC71100FA501A /* logo.png */; };
 		A27095721D0ACA8800FA501A /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A27095711D0ACA8800FA501A /* title.png */; };
+		A287A6CC1D1080EF0066B1C9 /* view.png in Resources */ = {isa = PBXBuildFile; fileRef = A287A6CB1D1080EF0066B1C9 /* view.png */; };
+		A287A6D21D1084240066B1C9 /* LookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A287A6D11D1084240066B1C9 /* LookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		A27095601D0AC6FA00FA501A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A270956D1D0AC71100FA501A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A27095711D0ACA8800FA501A /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		A287A6CA1D105A770066B1C9 /* TransferService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
+		A287A6CB1D1080EF0066B1C9 /* view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view.png; sourceTree = "<group>"; };
+		A287A6D01D1084240066B1C9 /* LookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookViewController.h; sourceTree = "<group>"; };
+		A287A6D11D1084240066B1C9 /* LookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +128,14 @@
 				A270953D1D0AC6FA00FA501A /* AppDelegate.m */,
 				A270953F1D0AC6FA00FA501A /* ViewController.h */,
 				A27095401D0AC6FA00FA501A /* ViewController.m */,
+				A287A6CA1D105A770066B1C9 /* TransferService.h */,
 				A27095421D0AC6FA00FA501A /* Main.storyboard */,
 				A27095451D0AC6FA00FA501A /* Assets.xcassets */,
 				A27095471D0AC6FA00FA501A /* LaunchScreen.storyboard */,
 				A270954A1D0AC6FA00FA501A /* Info.plist */,
 				A27095391D0AC6FA00FA501A /* Supporting Files */,
+				A287A6D01D1084240066B1C9 /* LookViewController.h */,
+				A287A6D11D1084240066B1C9 /* LookViewController.m */,
 			);
 			path = MyDrawing;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 				A22CC3EB1D0B3F1400E60DC9 /* mode1.png */,
 				A22CC3EC1D0B3F1400E60DC9 /* mode2.png */,
 				A22CC3F21D0B421A00E60DC9 /* size.png */,
+				A287A6CB1D1080EF0066B1C9 /* view.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -280,6 +290,7 @@
 			files = (
 				A22CC3EF1D0B3F1400E60DC9 /* mode.png in Resources */,
 				A270956F1D0AC71100FA501A /* logo.png in Resources */,
+				A287A6CC1D1080EF0066B1C9 /* view.png in Resources */,
 				A22CC3F31D0B421A00E60DC9 /* size.png in Resources */,
 				A22CC3F01D0B3F1400E60DC9 /* mode1.png in Resources */,
 				A22CC3F11D0B3F1400E60DC9 /* mode2.png in Resources */,
@@ -316,6 +327,7 @@
 				A27095411D0AC6FA00FA501A /* ViewController.m in Sources */,
 				A270953E1D0AC6FA00FA501A /* AppDelegate.m in Sources */,
 				A270953B1D0AC6FA00FA501A /* main.m in Sources */,
+				A287A6D21D1084240066B1C9 /* LookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

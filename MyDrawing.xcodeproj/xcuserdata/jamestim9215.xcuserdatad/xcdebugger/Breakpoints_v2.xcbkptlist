@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyDrawing/ViewController.m"
-            timestampString = "487579664.806566"
+            timestampString = "487662176.05546"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "268"
+            endingLineNumber = "268"
             landmarkName = "-pencilPressed:"
             landmarkType = "5">
          </BreakpointContent>
